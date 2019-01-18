@@ -25,7 +25,6 @@ nav{
 
 }
 .mob-social{
-    color: black;
     width: 80%;
     margin: 0 10% 0 10%;
     max-block-size: 100%;
@@ -38,15 +37,7 @@ nav{
     flex-flow: row;
     cursor: pointer;
 }
-.instagram:hover{
-    color: #cd486b;
-}
-.facebook:hover{
-    color: #3b5998;
-}
-.twitter:hover{
-    color: #55acee;
-}
+
 .mob-social i{
     margin: 12px;
 }
