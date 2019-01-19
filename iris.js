@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
+    particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
     // IRIS
-    $(".inspire,.resonate,.integrate,.succeed").on('hover', function () {
-        alert('o');
+    $(".inspire,.resonate,.integrate,.succeed").on('mouseenter', function () {
         $(this).addClass("animated rubberBand");
+    });
+    $(".inspire,.resonate,.integrate,.succeed").on('mouseleave', function () {
+        $(this).removeClass("animated rubberBand");
     });
 
     // FORCE PAGE TO LOAD FROM TOP (0,0) ON EVERY LOAD
@@ -11,12 +16,13 @@ $(document).ready(function () {
         window.scrollTo(0, 0);
     }
     //CLICK TO SCROLL DOWN
-    $('#d-arrow').on('click', function () {
+    $('#d-arrow').on('click', function (e) {
+        e.preventDefault();
         $("html").scrollTop(0);
         // body...
         $('html,body').animate({
-            scrollTop: $('main').offset().top - 64
-        }, 1500);
+            scrollTop: $('.scrollable').offset().top - 64
+        }, 1500, 'linear');
     })
     //AOS-animate on scroll
     AOS.init();

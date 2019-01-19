@@ -1,7 +1,9 @@
+
 html,body{
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
 a{
     text-decoration: none;
@@ -56,6 +58,7 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  text-shadow: 10px 10px black;
 }
 @media (max-width:1000px)
 {
@@ -84,13 +87,14 @@ text-decoration: none;
     background-size: cover;
     font-family: Raleway;
 }
-
-
+.sp{
+    font-family: Raleway;
+}
 .main-footer{
     font-family: monospace;
     color: white;
     background-color: #2e2e2e;
-    margin-top: 30px;
+    margin-top: 5px;
     width: 100%;
     border: 1px solid green;
 }
