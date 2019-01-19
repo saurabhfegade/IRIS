@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    particlesJS.load('particles-js', 'particles.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
+
     // IRIS
     $(".inspire,.resonate,.integrate,.succeed").on('mouseenter', function () {
         $(this).addClass("animated rubberBand");
