@@ -7,6 +7,9 @@ html,body{
     height: 100%;
 
 }
+.container{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -87,6 +90,7 @@ text-decoration: none;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Raleway;
+    overflow-x: hidden;
 }
 .sp{
     font-family: Raleway;
@@ -95,24 +99,27 @@ text-decoration: none;
     font-family: monospace;
     color: white;
     background-color: #2e2e2e;
-    margin-top: 5px;
     width: 100%;
     border: 1px solid green;
 }
 
-.main-footer p{
-    font-size: 18px;
-}
-
-.main-social{
-    color: white;
-}
-
-.contact{
+.soc{
+    width: 30%;
+    max-width: 100%;
+    margin: 0 35% 0 35%;
+    border: 1px solid white;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
     align-items: center;
+}
+
+@media(max-width:700px)
+{
+    .soc{
+        width: 100%;
+
+    }
 }
 
 .flip-box {

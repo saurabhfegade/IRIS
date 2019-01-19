@@ -20,7 +20,7 @@ $(document).ready(function () {
         // body...
         $('html,body').animate({
             scrollTop: $('.scrollable').offset().top - 64
-        }, 1500, 'linear');
+        }, 1500);
     })
     //AOS-animate on scroll
     AOS.init();
@@ -58,7 +58,6 @@ $('.sameLink').on('click', function () {
     $('.sidenav').sidenav('close');
 });
 function toggleDd() {
-    // alert();
     $('.dropdown-trigger').removeClass('closed').addClass('opened').dropdown('open');
 
     if ($('.dropdown-trigger').has('opened')) {
