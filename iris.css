@@ -35,12 +35,10 @@ text-decoration: none;
     justify-content: center;
     color: white;
     font-family: cursive;
-    font-size: 1.4em;
 
 }
 
 .intro{
-    /* border: 1px solid white; */
     width: 100%;
     max-width: 100%;
     margin: 10px 10% 10px 10%;
@@ -48,7 +46,7 @@ text-decoration: none;
     flex-flow: row;
     justify-content: space-between;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 20rem;
 }
 
 .intro span{
@@ -78,18 +76,18 @@ text-decoration: none;
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    
     max-width: 100%;;
-    /* position: absolute; */
     padding: 0;
     background-image: url(https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Raleway;
 }
 
+
 .main-footer{
-    font-family: Raleway;
+    font-family: monospace;
     color: white;
     background-color: #2e2e2e;
     margin-top: 30px;
@@ -98,11 +96,18 @@ text-decoration: none;
 }
 
 .main-footer p{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .main-social{
     color: white;
+}
+
+.contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

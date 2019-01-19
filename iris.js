@@ -1,17 +1,22 @@
 $(document).ready(function () {
 
+    // IRIS
+    $(".inspire,.resonate,.integrate,.succeed").on('hover', function () {
+        alert('o');
+        $(this).addClass("animated rubberBand");
+    });
+
     // FORCE PAGE TO LOAD FROM TOP (0,0) ON EVERY LOAD
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     }
     //CLICK TO SCROLL DOWN
-    $('.down').on('click', function () {
-        // alert();
+    $('#d-arrow').on('click', function () {
         $("html").scrollTop(0);
         // body...
         $('html,body').animate({
-            scrollTop: $('main').offset().top - 30
-        }, 1000);
+            scrollTop: $('main').offset().top - 64
+        }, 1500);
     })
     //AOS-animate on scroll
     AOS.init();
@@ -30,35 +35,6 @@ $(document).ready(function () {
 
     $(".dropdown-trigger").dropdown();
 
-
-    // FOR aboutLink and teamLink click to scroll part
-    $('#aboutLink').on('click', function () {
-        // alert('clicked')
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top - 64
-        }, 1500);
-    })
-    $('#aboutLinkMob').on('click', function () {
-        // alert('clicked')
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top - 64
-        }, 1500);
-    })
-    $('#teamLinkMob').on('click', function () {
-        // alert('clicked')
-        $('html, body').animate({
-            scrollTop: $("#team").offset().top - 64
-        }, 1500);
-    })
-    $('#teamLink').on('click', function () {
-        // alert('clicked')
-
-        $('html, body').animate({
-            scrollTop: $("#team").offset().top - 64
-        }, 1500);
-    })
-
-
     //ADDING BLACK BG_COLOR TO NAVBAR AFTER 300px SCROLL FROM TOP
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
@@ -74,6 +50,9 @@ $(document).ready(function () {
 
 });
 
+$('.sameLink').on('click', function () {
+    $('.sidenav').sidenav('close');
+});
 function toggleDd() {
     // alert();
     $('.dropdown-trigger').removeClass('closed').addClass('opened').dropdown('open');
@@ -83,10 +62,7 @@ function toggleDd() {
         $('.dropdown-trigger').dropdown('close');
     }
 
-    // IRIS
-    $(".inspire,.resonate,.integrate,.succeed").hover(function () {
-        $(this).toggleClass("animated rubberBand");
-    });
+
 
 
 
